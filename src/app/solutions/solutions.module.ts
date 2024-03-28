@@ -1,21 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AlmacenajeComponent } from './components/almacenaje/almacenaje.component';
-import { DistribucionComponent } from './components/distribucion/distribucion.component';
-import { LogisticaInterComponent } from './components/logistica-inter/logistica-inter.component';
 import { PageComponent } from './components/page/page.component';
-
-
+import { AlmsolutionsComponent } from './components/almsolutions/almsolutions.component';
+import { DistsolutionsComponent } from './components/distsolutions/distsolutions.component';
+import { LogissolutionsComponent } from './components/logissolutions/logissolutions.component';
 
 @NgModule({
   declarations: [
-    AlmacenajeComponent,
-    DistribucionComponent,
-    LogisticaInterComponent,
-    PageComponent
+    PageComponent,
+    AlmsolutionsComponent,
+    DistsolutionsComponent,
+    LogissolutionsComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [PageComponent],
 })
-export class SolutionsModule { }
+export class SolutionsModule {}
