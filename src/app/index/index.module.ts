@@ -5,13 +5,14 @@ import { CodigoredlogisticoComponent } from './components/codigoredlogistico/cod
 import { CovidComponent } from './components/covid/covid.component';
 import { SpanNumbersComponent } from './components/span-numbers/span-numbers.component';
 
-
-
-
-
 @NgModule({
-  declarations: [HeaderComponent, CodigoredlogisticoComponent, CovidComponent, SpanNumbersComponent],
+  declarations: [
+    HeaderComponent,
+    CodigoredlogisticoComponent,
+    CovidComponent,
+    SpanNumbersComponent,
+  ],
   imports: [CommonModule],
-  exports:[HeaderComponent]
+  exports: [HeaderComponent],
 })
-export class IndexModule { }
+export class IndexModule {}

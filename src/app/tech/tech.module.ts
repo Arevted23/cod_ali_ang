@@ -12,6 +12,10 @@ import { LogisticaComponent } from './components/logistica/logistica.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    AlmacenajeComponent,
+    LogisticaComponent
   ]
 })
 export class TechModule { }
