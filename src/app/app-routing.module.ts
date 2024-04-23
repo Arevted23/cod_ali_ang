@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'solutions', component: SolutionsIndexComponent},
   {path: 'location', component: LocationComponent },
   {path: 'tech', component: LogisticaComponent },
-  //- Ruta principal
+  //- Ruta principal o default
   {path: '**', component:HeaderComponent}
 ];
 
