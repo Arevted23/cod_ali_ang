@@ -7,19 +7,18 @@ import { LocationComponent } from './location/components/location/location.compo
 import { LogisticaComponent } from './tech/components/logistica/logistica.component';
 import { SolutionsIndexComponent } from './solutions/components/solutions-index/solutions-index.component';
 
-
 const routes: Routes = [
-  {path: 'home', component: HeaderComponent},
-  {path: 'aboutof', component: AboutusComponent },
-  {path: 'solutions', component: SolutionsIndexComponent},
-  {path: 'location', component: LocationComponent },
-  {path: 'tech', component: LogisticaComponent },
+  { path: 'home', component: HeaderComponent },
+  { path: 'aboutof', component: AboutusComponent },
+  { path: 'solutions', component: SolutionsIndexComponent },
+  { path: 'location', component: LocationComponent },
+  { path: 'tech', component: LogisticaComponent },
   //- Ruta principal o default
-  {path: '**', component:HeaderComponent}
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
